@@ -11359,3 +11359,120 @@ Sent data Name - Tents.pdf (2.7ms)
 Completed 200 OK in 1758ms (Views: 2.4ms)
 
 
+Started GET "/pdf/index.pdf" for 172.24.0.1 at 2018-02-26 04:47:46 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PdfController#index as PDF
+***************WICKED***************
+  Rendering pdf/show.html.erb within layouts/name-tents.html
+  Rendered pdf/show.html.erb within layouts/name-tents.html (1337.9ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Name - Tents.pdf (554.3ms)
+Completed 200 OK in 3458ms (Views: 9.2ms)
+
+
+Started GET "/pdf/show.pdf" for 172.24.0.1 at 2018-02-26 04:47:54 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PdfController#show as PDF
+***************WICKED***************
+  Rendering pdf/show.html.erb within layouts/name-badges.html
+  Rendered pdf/show.html.erb within layouts/name-badges.html (62.3ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Name - Tents.pdf (2.2ms)
+Completed 200 OK in 1487ms (Views: 2.0ms)
+
+
+Started GET "/" for 172.24.0.1 at 2018-02-26 04:49:43 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/bundle/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 8ms (Views: 5.7ms)
+
+
+Started GET "/pdf/index.pdf" for 172.24.0.1 at 2018-02-26 04:53:13 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PdfController#index as PDF
+***************WICKED***************
+  Rendering pdf/show.html.erb within layouts/name-tents.html
+  Rendered pdf/show.html.erb within layouts/name-tents.html (81.3ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Name - Tents.pdf (2.3ms)
+Completed 200 OK in 1608ms (Views: 2.1ms)
+
+
+Started GET "/pdf/show.pdf" for 172.24.0.1 at 2018-02-26 04:53:24 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PdfController#show as PDF
+***************WICKED***************
+  Rendering pdf/show.html.erb within layouts/name-badges.html
+  Rendered pdf/show.html.erb within layouts/name-badges.html (68.4ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Name - Tents.pdf (3.6ms)
+Completed 200 OK in 1508ms (Views: 3.4ms)
+
+
+Started GET "/pdf/show.pdf" for 172.24.0.1 at 2018-02-26 04:53:25 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PdfController#show as PDF
+***************WICKED***************
+  Rendering pdf/show.html.erb within layouts/name-badges.html
+  Rendered pdf/show.html.erb within layouts/name-badges.html (80.0ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Name - Tents.pdf (1.8ms)
+Completed 200 OK in 1483ms (Views: 1.6ms)
+
+
+Started GET "/pdf/name-badges.pdf" for 172.24.0.1 at 2018-02-26 05:03:24 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PdfController#index as PDF
+***************WICKED***************
+  Rendering pdf/show.html.erb within layouts/name-tents.html
+  Rendered pdf/show.html.erb within layouts/name-tents.html (1012.2ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Name - Tents.pdf (601.5ms)
+Completed 200 OK in 3224ms (Views: 6.0ms)
+
+
+Started GET "/pdf/name-badges.pdf" for 172.24.0.1 at 2018-02-26 05:04:08 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PdfController#show as PDF
+***************WICKED***************
+  Rendering pdf/show.html.erb within layouts/name-badges.html
+  Rendered pdf/show.html.erb within layouts/name-badges.html (63.4ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Name - Tents.pdf (2.3ms)
+Completed 200 OK in 1523ms (Views: 1.9ms)
+
+
+Started GET "/pdf/name-tents.pdf" for 172.24.0.1 at 2018-02-26 05:04:15 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PdfController#index as PDF
+***************WICKED***************
+  Rendering pdf/show.html.erb within layouts/name-tents.html
+  Rendered pdf/show.html.erb within layouts/name-tents.html (69.0ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Name - Tents.pdf (1.9ms)
+Completed 200 OK in 1633ms (Views: 1.6ms)
+
+
+Started GET "/pdf/name-tents.pdf" for 172.24.0.1 at 2018-02-26 05:04:17 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PdfController#index as PDF
+***************WICKED***************
+  Rendering pdf/show.html.erb within layouts/name-tents.html
+  Rendered pdf/show.html.erb within layouts/name-tents.html (59.9ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data Name - Tents.pdf (3.7ms)
+Completed 200 OK in 1579ms (Views: 3.4ms)
+
+
