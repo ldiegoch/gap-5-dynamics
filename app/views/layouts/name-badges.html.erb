@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> - Overview Report</title>
+  <%= wicked_pdf_stylesheet_link_tag "pdf", media: "all", "data-turbolinks-track" => true %>
+</head>
+<body class="page--100x50">
+  <% @profiles.each_with_index do |profile, index| -%>
+    <div class="card">
+      <div class="card--profile">
+        <div class="card__profile--logo">
+            <svg class="card__svg card__svg--profile" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+              <path style="fill:#4A4A4A;" d="M19.5-0.5"/>
+              <path style="fill:none;stroke:#95989A;stroke-miterlimit:10;" d="M38.8,41c-0.9-0.3-1.7-0.6-2.6-0.9c-0.9-0.3-1.8-0.6-2.7-0.9c-0.9-0.3-1.8-0.5-2.5-0.8c-0.9-0.3-1.4-0.8-1.6-1.5c-0.2-0.6-0.2-1.3-0.2-1.8c0-0.7,0.1-1.4,0.4-2s0.4-1.2,0.6-1.6c0.2-0.4,0.5-0.9,0.7-1.6c0.2-0.6,0.3-1.3,0.3-2c0-0.1,0-0.2,0.1-0.3c0.1-0.1,0.2-0.2,0.2-0.3c0.2-0.2,0.4-0.5,0.6-1c0.2-0.5,0.5-1.2,0.7-2.2c0.2-0.7,0.2-1.2,0.2-1.5c0-0.2-0.1-0.4-0.2-0.6c0-0.1,0-0.2-0.1-0.2c0-0.1-0.1-0.2-0.1-0.2c-0.2-0.4-0.2-1.2-0.1-2.4c0.1-1.2,0.3-2.3,0.4-3.2c0-0.3-0.1-0.9-0.2-1.8c-0.1-0.9-0.5-1.8-1.3-2.7c-0.2-0.3-0.6-0.6-1-1c-0.4-0.3-0.8-0.6-1.2-0.7c-0.5-0.2-1-0.4-1.5-0.5c-0.5-0.1-1.1-0.2-1.8-0.3h-2C23.6,9,23,9.1,22.5,9.2c-0.5,0.1-1,0.3-1.4,0.5c-0.5,0.2-0.9,0.4-1.3,0.7c-0.4,0.3-0.7,0.7-1,1c-0.7,0.9-1.1,1.8-1.2,2.7c-0.2,0.9-0.2,1.5-0.1,1.8c0.2,0.9,0.3,2,0.4,3.2c0.1,1.2,0,2-0.1,2.4c0,0.1,0,0.2,0,0.2c0,0.1,0,0.2-0.1,0.2c-0.1,0.2-0.1,0.4-0.1,0.6s0.1,0.7,0.2,1.5c0.2,1,0.4,1.7,0.6,2.2s0.4,0.8,0.6,1c0.1,0.1,0.2,0.2,0.2,0.3c0.1,0.1,0.1,0.2,0.1,0.3c0.1,0.7,0.2,1.3,0.4,2c0.2,0.7,0.4,1.2,0.6,1.6c0.3,0.7,0.5,1.3,0.5,2c0,0.7,0.1,1.2,0.1,1.7c0,0.7-0.1,1.3-0.2,2c-0.1,0.7-0.6,1.1-1.5,1.3c-0.8,0.2-1.7,0.5-2.6,0.9c-0.9,0.3-1.9,0.7-2.7,1c-0.9,0.3-1.8,0.6-2.6,0.9"/>
+            </svg>
+        </div>
+        <span class="card--name card--name--medium">
+          <%= profile.first_name %>
+          <span class="card--last-name"><%= profile.last_name %></span>
+        </span>
+        <div class="card--disclaimer">
+          2017 5 Dynamics LLC
+        </div>
+      </div>
+      <div class="card--energy-patterns card--energy-patterns--big">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-16783 -24138 254 316.781">
+          <defs>
+            <style>
+              .cls-1, .cls-3 {
+                fill: #ececec;
+              }
+
+              .cls-1 {
+                stroke: #c9c8c8;
+              }
+
+              .cls-2 {
+                fill: #fff;
+              }
+
+              .cls-4 {
+                fill: #b6b6b7;
+              }
+
+              .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+                fill-rule: evenodd;
+              }
+
+              .cls-5, .cls-9 {
+                fill: #73b843;
+              }
+
+              .cls-12, .cls-6 {
+                fill: #f15a22;
+              }
+
+              .cls-7 {
+                fill: #fece07;
+              }
+
+              .cls-8 {
+                fill: #005b94;
+              }
+
+              .cls-10, .cls-11, .cls-12, .cls-9 {
+                font-size: 10px;
+              }
+
+              .cls-10, .cls-11, .cls-12, .cls-13, .cls-9 {
+                font-family: Lato-Bold, Lato;
+                font-weight: 700;
+              }
+
+              .cls-10 {
+                fill: #005b95;
+              }
+
+              .cls-11 {
+                fill: #efaf00;
+              }
+
+              .cls-13 {
+                fill: #212121;
+                font-size: 12px;
+              }
+
+              .cls-14 {
+                stroke: none;
+              }
+
+              .cls-15 {
+                fill: none;
+              }
+            </style>
+          </defs>
+          <g id="Group_5049" data-name="Group 5049" transform="translate(-17771 -24355)">
+            <g id="Rectangle_1387" data-name="Rectangle 1387" class="cls-1" transform="translate(991 248)">
+              <rect class="cls-14" width="251" height="251" rx="45"/>
+              <rect class="cls-15" x="0.5" y="0.5" width="250" height="250" rx="44.5"/>
+            </g>
+            <rect id="Rectangle_1388" data-name="Rectangle 1388" class="cls-2" width="200" height="200" rx="35" transform="translate(1017 275)"/>
+            <rect id="Rectangle_1389" data-name="Rectangle 1389" class="cls-3" width="142" height="142" rx="26" transform="translate(1046 303)"/>
+            <rect id="Rectangle_1390" data-name="Rectangle 1390" class="cls-2" width="54" height="54" rx="14" transform="translate(1090 348)"/>
+            <path id="Fill-7" class="cls-4" d="M125.767,123.5a1.372,1.372,0,1,1-1.372-1.37,1.371,1.371,0,0,1,1.372,1.37" transform="translate(992.978 251.865)"/>
+            <path id="Fill-186" class="cls-5" d="M99.646,96.623A25.893,25.893,0,1,1,125.534,70.73V96.623Z" transform="translate(989.242 276.877)"/>
+            <path id="Fill-188" class="cls-6" d="M216.564,147.107a39.754,39.754,0,1,1-39.747,39.754V147.107Z" transform="translate(942.852 229.74)"/>
+            <path id="Fill-190" class="cls-7" d="M176.817,113.776a30.26,30.26,0,1,1,30.261,30.26H176.817Z" transform="translate(942.852 229.719)"/>
+            <path id="Fill-192" class="cls-8" d="M222.941,196.682a49.576,49.576,0,1,1-49.576-49.575h49.576Z" transform="translate(892.21 229.741)"/>
+            <text id="Deliberate" class="cls-9" transform="translate(988 241.781)"><tspan x="0" y="0">Deliberate</tspan></text>
+            <text id="Effortless_" data-name="Effortless +" class="cls-10" transform="translate(988 531.781)"><tspan x="0" y="0">Effortless +</tspan></text>
+            <text id="Deliberate_" data-name="Deliberate+" class="cls-11" transform="translate(1239.1 241.781)"><tspan x="-53.475" y="0">Deliberate+</tspan></text>
+            <text id="Effortless" class="cls-12" transform="translate(1239.4 531.781)"><tspan x="-43.17" y="0">Effortless</tspan></text>
+            <text id="_1.EXPLORE" data-name="1.EXPLORE" class="cls-13" transform="translate(988 519)"><tspan x="0" y="0">1.EXPLORE</tspan></text>
+            <text id="_2.EXCITE" data-name="2.EXCITE" class="cls-13" transform="translate(988 229)"><tspan x="0" y="0">2.EXCITE</tspan></text>
+            <text id="_4.EXECUTE" data-name="4.EXECUTE" class="cls-13" transform="translate(1177 519)"><tspan x="0" y="0">4.EXECUTE</tspan></text>
+            <text id="_3.EXAMINE" data-name="3.EXAMINE" class="cls-13" transform="translate(1240 229)"><tspan x="-64.068" y="0">3.EXAMINE</tspan></text>
+            <g id="Group_5044" data-name="Group 5044">
+              <rect id="Rectangle_1391" data-name="Rectangle 1391" class="cls-2" width="2" height="20" transform="translate(1065 416)"/>
+              <rect id="Rectangle_1392" data-name="Rectangle 1392" class="cls-2" width="2" height="20" transform="translate(1076 425) rotate(90)"/>
+            </g>
+            <g id="Group_5045" data-name="Group 5045" transform="translate(84 -83)">
+              <rect id="Rectangle_1391-2" data-name="Rectangle 1391" class="cls-2" width="2" height="20" transform="translate(1065 416)"/>
+              <rect id="Rectangle_1392-2" data-name="Rectangle 1392" class="cls-2" width="2" height="20" transform="translate(1076 425) rotate(90)"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+      <!--div class="card__content">
+        <div class="card__content--detailleft">
+          <span class="card_content--blacktext">2.EXCITE</span>
+          <span class="card_content--bluetext">Deliberate</span>
+        </div>
+        <div class="card__content--detailright">
+          <span class="card_content--blacktext">3.EXAMINE</span>
+          <span class="card_content--bluetext">Abundant</span>
+        </div>
+        <div class="card__content--main">
+          <div class="card__content--mainwhite">
+            <div class="card__content--mainsmall"></div>
+          </div>
+        </div>
+        <div class="card__content--detailleft">
+          <span class="card_content--blacktext">1.EXPLORE</span>
+          <span class="card_content--bluetext">Effortless</span>
+        </div>
+        <div class="card__content--detailright">
+          <span class="card_content--blacktext">3.EXAMINE</span>
+          <span class="card_content--bluetext">Reserved</span>
+        </div>
+      </div>
+    </div-->
+    <% if index > 0 and index % 5 === 0 %>
+      <div class="pdf--page--break"></div>
+    <% end %>
+  <% end -%>
+</body>
+</html>
